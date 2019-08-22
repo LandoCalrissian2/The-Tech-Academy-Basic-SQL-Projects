@@ -1,0 +1,1 @@
+SELECT B.CardNo, B.CardNo, B.Name, B.Address, COUNT(*)FROM BORROWER B, BOOK_LOANS L WHERE B.CardNo = L.CardNo GROUP BY B.CardNo, B.Name, B.Address HAVING COUNT(*) > 5;
